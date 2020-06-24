@@ -1,0 +1,20 @@
+<header>
+            <!-- <a class="logo" href="#"><img src="/images/terry-latanville-ca.png" alt="terry-latanville-ca"></a> -->
+            <a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
+            <ul class="main-menu" id="main-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li class="drop-down"><a href="#!">Posts<i class="ion-arrow-down-b"></i></a>
+                    <ul class="drop-down-menu drop-down-inner">
+                        {% for post in posts %}<li><a href="{{post.link}}">{{post.title}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li class="drop-down"><a href="#!">Projects<i class="ion-arrow-down-b"></i></a>
+                    <ul class="drop-down-menu drop-down-inner">
+                        {% for project in projects %}<li><a href="{{project.link}}">{{project.title}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <!-- <li><a href="/about.html">About</a></li> -->
+            </ul>
+        </header>

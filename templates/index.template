@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    {% include "head.template" %}
+    <body>
+        {% include "menu.template" %}
+
+        <!-- Most recent story -->
+        <div class="slider-main h-800x h-sm-auto pos-relative pt-95 pb-25">
+            <div class="img-bg bg-1 bg-layer-4"></div>
+            <div class="container-fluid h-100 mt-xs-50">
+                <div class="row h-100">
+                    <div class="col-md-1"></div>
+                    <div class="col-sm-12 col-md-5 h-100 h-sm-50">
+                        <div class="dplay-tbl">
+                            <div class="dplay-tbl-cell color-md-black mtb-30">
+                                <div>
+                                    <h5><b>{{posts.first.tags|uppercase|join:", "}}</b></h5>
+                                    <h1 class="mt-20 mb-30"><b>{{posts.first.title}}</b></h1>
+                                    <h6>{{posts.first.snippet}} ...</h6>
+                                    <hr />
+                                    <h6><a class="plr-20 btn-brdr-grey color-md-black" href="{{posts.first.link}}"><b>Continue Reading</b></a></h6>
+                                </div><!-- mx-w-200x -->
+                            </div><!-- dplay-tbl-cell -->
+                        </div><!-- dplay-tbl -->
+                    </div><!-- col-sm-6 -->
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- slider-main -->
+        
+        
+        <section class="bg-1-white ptb-0">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-md-12 col-lg-8 ptb-50 pr-30 pr-md-15">
+                        <h4 class="mb-30 mt-20 clearfix"><b>Recent Posts</b></h4>
+                        <div class="row">
+                            {% for post in posts %}{% if forloop.counter0 < 3 %}<!-- Cards with Image Background -->
+                            <!-- Card -->
+                            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30">
+                                <div class="card h-100 pos-relative bg-tag-{{post.tags.first}} bg-layer-4 color-white">
+                                    <div class="plr-25 ptb-15">
+                                        <h6 class="color-white shadow-grey"><b>{{post.tags|uppercase|join:", "}}</b></h6>
+                                        <h4 class="mtb-10"><a href="{{post.link}}"><b class="shadow-grey">{{post.title}}</b></a></h4>
+                                        <ul class="list-li-mr-10 color-white shadow-grey">
+                                            <li class="float-right"><i>{{post.formattedDate}}</i></li>
+                                        </ul>
+                                    </div>
+                                </div><!-- card -->
+                            </div><!-- col-lg-4 col-md-6 -->{% endif %}{% endfor %}
+                        </div><!-- row -->
+                    </div>
+                </div>
+            </div><!-- container -->
+        </section>
+        {% include "footer.template" %}
+    </body>
+</html>
