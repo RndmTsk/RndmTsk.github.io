@@ -1,0 +1,11 @@
+{
+    "name": "terry.latanville.ca",
+    "short_name": "terry.latanville.ca",
+    "icons": [{
+        "src": "assets/img/google-touch-icon.png",
+        "sizes": "512x512"
+    }],
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "display": "fullscreen"
+}

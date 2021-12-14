@@ -1,130 +1,340 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-        <head>
-        <title></title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="UTF-8">	
-        <!-- Font -->
-        <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
-        <!-- Stylesheets -->
-        <link href="/plugin-frameworks/bootstrap.min.css" rel="stylesheet">
-        <link href="/plugin-frameworks/swiper.css" rel="stylesheet">
-        <link href="/fonts/ionicons.css" rel="stylesheet">
-        <link href="/common/styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <!-- <a class="logo" href="#"><img src="/images/terry-latanville-ca.png" alt="terry-latanville-ca"></a> -->
-            <a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
-            <ul class="main-menu" id="main-menu">
-                <li><a href="/index.html">Home</a></li>
-                <li class="drop-down"><a href="#!">Posts<i class="ion-arrow-down-b"></i></a>
-                    <ul class="drop-down-menu drop-down-inner">
-                        <li><a href="/posts/hello-world.html">Hello World</a></li>
-                        
-                    </ul>
-                </li>
-                <li class="drop-down"><a href="#!">Projects<i class="ion-arrow-down-b"></i></a>
-                    <ul class="drop-down-menu drop-down-inner">
-                        <li><a href="https://github.com/RndmTsk/exercism">Coding Exercises</a></li>
-                        <li><a href="https://github.com/RndmTsk/GLSLVisualizer-iOS">iOS OpenGL Toy</a></li>
-                        <li><a href="https://github.com/RndmTsk/SwiftMySQLClient">Swift MySQL</a></li>
-                        
-                    </ul>
-                </li>
-                <!-- <li><a href="/about.html">About</a></li> -->
-            </ul>
-        </header>
+  <head>
+      <meta charset="utf-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <meta content="My development portfolio with some development tips and tricks mixed in" name="description" />
+      <meta content="" name="keywords" />
+      <meta content="Terry Latanville" name="author" />
 
-        <!-- Most recent story -->
-        <div class="slider-main h-800x h-sm-auto pos-relative pt-95 pb-25">
-            <div class="img-bg bg-1 bg-layer-4"></div>
-            <div class="container-fluid h-100 mt-xs-50">
-                <div class="row h-100">
-                    <div class="col-md-1"></div>
-                    <div class="col-sm-12 col-md-5 h-100 h-sm-50">
-                        <div class="dplay-tbl">
-                            <div class="dplay-tbl-cell color-md-black mtb-30">
-                                <div>
-                                    <h5><b>BLOG</b></h5>
-                                    <h1 class="mt-20 mb-30"><b>Hello World</b></h1>
-                                    <h6>It's been quite a journey: from paid hosting, to Google Cloud compute instances, to Wordpress free hosting, finally to GitHub &mdash; this site has been a while in the making. It's my hope that you enjoy reading my articles as much as I enjoy writing them.<br /><br />This site is dedicated to Swift examples &mdash; including iOS, WatchOS, server, and more! ...</h6>
-                                    <hr />
-                                    <h6><a class="plr-20 btn-brdr-grey color-md-black" href="/posts/hello-world.html"><b>Continue Reading</b></a></h6>
-                                </div><!-- mx-w-200x -->
-                            </div><!-- dplay-tbl-cell -->
-                        </div><!-- dplay-tbl -->
-                    </div><!-- col-sm-6 -->
-                </div><!-- row -->
-            </div><!-- container -->
-        </div><!-- slider-main -->
-        
-        
-        <section class="bg-1-white ptb-0">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-1"></div>
-                    <div class="col-md-12 col-lg-8 ptb-50 pr-30 pr-md-15">
-                        <h4 class="mb-30 mt-20 clearfix"><b>Recent Posts</b></h4>
-                        <div class="row">
-                            <!-- Cards with Image Background -->
-                            <!-- Card -->
-                            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-30">
-                                <div class="card h-100 pos-relative bg-tag-blog bg-layer-4 color-white">
-                                    <div class="plr-25 ptb-15">
-                                        <h6 class="color-white shadow-grey"><b>BLOG</b></h6>
-                                        <h4 class="mtb-10"><a href="/posts/hello-world.html"><b class="shadow-grey">Hello World</b></a></h4>
-                                        <ul class="list-li-mr-10 color-white shadow-grey">
-                                            <li class="float-right"><i>Feb 20, 2019</i></li>
-                                        </ul>
-                                    </div>
-                                </div><!-- card -->
-                            </div><!-- col-lg-4 col-md-6 -->
-                        </div><!-- row -->
-                    </div>
+      <title>terry.latanville.ca</title>
+
+      <!-- Favicons -->
+      <link href="assets/img/favicon.png" rel="icon" />
+      <link rel="icon" href="assets/img/favicon.svg" />
+      <link rel="mask-icon" href="assets/img/mask-icon.svg" color="#000000" />
+      <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+      <link rel="manifest" href="manifest.json" />
+
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+
+      <!-- Vendor CSS Files -->
+      <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+      <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+      <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+      <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+      <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+      <!-- Template Main CSS File -->
+      <link href="assets/css/style.css" rel="stylesheet" />
+
+      <!-- =======================================================
+      * Template Name: MyResume - v4.6.0
+      * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+      * Author: BootstrapMade.com
+      * License: https://bootstrapmade.com/license/
+      ======================================================== -->
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex flex-column justify-content-center">
+      <nav id="navbar" class="navbar nav-menu">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#projects" class="nav-link scrollto"><i class="bx bxl-github"></i> <span>Projects</span></a></li>
+          <li><a href="#apps" class="nav-link scrollto"><i class="bx bx-mobile-alt"></i> <span>Apps</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-paper-plane"></i> <span>Resume</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </header><!-- End Header -->
+    <!-- Hero -->
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <h1>Terry Latanville</h1>
+        <p><span class="typed" data-typed-items="Developer, Mentor, Swift Evangelist, Gamer"></span></p>
+        <div class="social-links">
+          <a href="https://twitter.com/terrylatanville" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/terrylatanville/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/rndmtsk" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://apps.apple.com/ca/developer/terry-latanville/id1200334897" class="apple"><i class="bx bxl-apple"></i></a>
+        </div>
+      </div>
+    </section><!-- End Hero -->
+    <main id="main">
+      <!-- Projects-->
+      <!-- ======= Projects Section ======= -->
+      <section id="projects" class="projects">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Projects</h2>
+            <p>I'm always building new things, or trying out concepts, here are a few of the things I've tinkered with so far ...</p>
+          </div>
+          <div class="row">
+            
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100"> <!-- TODO: (TL) Variable times -->
+              <div class="icon-box iconbox-red">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                  </svg>
+                  <i class="bx bx-code-alt"></i>
                 </div>
-            </div><!-- container -->
-        </section>
-        <footer class="bg-191 color-ash pt-50 pb-20 text-left center-sm-text">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-1"></div>
-                    <div class="col-md-4 col-lg-6 mb-30">
-                        <div class="card h-100">
-                            <div class="dplay-tbl">
-                                <div class="dplay-tbl-cell">
-                                    <!-- TODO: (TL) Add something interesting here -->
-                                    <p class="color-ash"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                                </div><!-- dplay-tbl-cell -->
-                            </div><!-- dplay-tbl -->
-                        </div><!-- card -->
-                    </div><!-- col-lg-4 col-md-6 -->
-                    
-                    <div class="col-md-4 col-lg-2 mb-30">
-                        <div class="card h-100">
-                            <div class="dplay-tbl">
-                                <div class="dplay-tbl-cell">
-                                
-                                    <ul class="list-a-plr-10">
-                                        <li><a href="https://github.com/RndmTsk"><i class="ion-social-github"></i></a></li>
-                                        <li><a href="https://twitter.com/terrylatanville"><i class="ion-social-twitter"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/in/terrylatanville"><i class="ion-social-linkedin"></i></a></li>
-                                    </ul>
-                                </div><!-- dplay-tbl-cell -->
-                            </div><!-- dplay-tbl -->
-                        </div><!-- card -->
-                    </div><!-- col-lg-4 col-md-6 -->
-                    
-                </div><!-- row -->
-            </div><!-- container -->
-        </footer>
-        <!-- SCIPTS -->
-        <script src="/plugin-frameworks/jquery-3.2.1.min.js"></script>
-        <script src="/plugin-frameworks/bootstrap.min.js"></script>
-        <script src="/plugin-frameworks/swiper.js"></script>
-        <script src="/common/scripts.js"></script>
-    </body>
+                <h4><a href="https://github.com/RndmTsk/exercism">Exercism</a></h4>
+                <p>A collection of solutions in several languages to aid in personal development</p>
+                <br />
+                <p><i>Swift, C, C++</i></p>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100"> <!-- TODO: (TL) Variable times -->
+              <div class="icon-box iconbox-orange">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                  </svg>
+                  <i class="bx bx-sitemap"></i>
+                </div>
+                <h4><a href="https://github.com/RndmTsk/rndmtsk.github.io/tree/master/generation">Generation</a></h4>
+                <p>A Swift-based tool used to generate this website from a Docker container</p>
+                <br />
+                <p><i>Swift, Stencil, Docker, SPM</i></p>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100"> <!-- TODO: (TL) Variable times -->
+              <div class="icon-box iconbox-yellow">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                  </svg>
+                  <i class="bx bx-game"></i>
+                </div>
+                <h4><a href="https://github.com/RndmTsk/GLSLVisualizer-iOS">GLSL Visualizer</a></h4>
+                <p>A tool similar to ShaderToy to test OpenGL ES shaders in iOS</p>
+                <br />
+                <p><i>iOS, Objective-C, OpenGL ES, GLSL</i></p>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100"> <!-- TODO: (TL) Variable times -->
+              <div class="icon-box iconbox-brown">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                  </svg>
+                  <i class="bx bx-coffee-togo"></i>
+                </div>
+                <h4><a href="https://github.com/RobotDisco/mattermost-bagel">Bagel</a></h4>
+                <p>A Mattermost bot used to pair users for coffee meetups</p>
+                <br />
+                <p><i>Golang</i></p>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100"> <!-- TODO: (TL) Variable times -->
+              <div class="icon-box iconbox-purple">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                  </svg>
+                  <i class="bx bx-rocket"></i>
+                </div>
+                <h4><a href="https://github.com/RndmTsk/Starlight">Starlight</a></h4>
+                <p>A 2D side-scroller written in Swift using SpriteKit, intended to showcase Flybits context engine</p>
+                <br />
+                <p><i>Swift, SpriteKit</i></p>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100"> <!-- TODO: (TL) Variable times -->
+              <div class="icon-box iconbox-black">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                  </svg>
+                  <i class="bx bxs-flag-checkered"></i>
+                </div>
+                <h4><a href="https://github.com/RndmTsk/SwAnki">SwAnki</a></h4>
+                <p>A re-imagined, Swift-based Anki Overdrive SDK</p>
+                <br />
+                <p><i>Swift</i></p>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100"> <!-- TODO: (TL) Variable times -->
+              <div class="icon-box iconbox-blue">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                  </svg>
+                  <i class="bx bxs-data"></i>
+                </div>
+                <h4><a href="https://github.com/RndmTsk/SwiftMySQLClient">MySQL Client</a></h4>
+                <p>A MySQL driver implemented in pure Swift</p>
+                <br />
+                <p><i>Swift, SQL</i></p>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100"> <!-- TODO: (TL) Variable times -->
+              <div class="icon-box iconbox-teal">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                  </svg>
+                  <i class="bx bx-hash"></i>
+                </div>
+                <h4><a href="https://github.com/RndmTsk/SwiftUITicTacToe">Tic Tac Toe</a></h4>
+                <p>A SwiftUI-based implementation of Tic Tac Toe</p>
+                <br />
+                <p><i>Swift, SwiftUI</i></p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section><!-- End Projects Section -->
+      <!-- Apps -->
+      <!-- ======= Apps Section ======= -->
+      <section id="apps" class="apps section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Apps</h2>
+            <p>My work is available in the Apple App Store</p>
+          </div>
+          <div class="row apps-container" data-aos="fade-up" data-aos-delay="200">
+            <center>
+              
+              <div class="col-lg-4 col-md-6 apps-item filter-app">
+                <div class="apps-wrap">
+                  <img src="assets/img/er-mapper.png" class="img-fluid" alt="">
+                  <div class="apps-info">
+                    <h4>ER Mapper</h4>
+                    <p>App</p>
+                    <div class="apps-links">
+                      <a href="https://apps.apple.com/ca/app/er-mapper/id1200334898" class="apps-details-lightbox" data-glightbox="type: external" title="ER Mapper Details" target="_blank"><i class="bx bx-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </center>
+          </div>
+        </div>
+      </section><!-- End Apps Section -->
+      <!-- Resume -->
+      <!-- ======= Resume Section ======= -->
+      <section id="resume" class="resume">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Resume</h2>
+            <p>I've had many amazing opportunities in my career, here's a small sample</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <h3 class="resume-title">Sumary</h3>
+              <div class="resume-item pb-0">
+                <h4>Terry Latanville</h4>
+                <p><em>Passionate developer with extensive experience in enterprise-grade applications. Leadership and mentoring are my favourite ways to provide value within my teams and organizations.</em></p>
+                <ul>
+                  <li class="bx bxl-gmail"><a href="mailto:tlatanville@gmail.com" target="_blank">tlatanville@gmail.com</a></li>
+                  <li class="bx bxl-linkedin"><a href="https://www.linkedin.com/in/terrylatanville/" target="_blank">LinkedIn</a></li>
+                  <li class="bx bxl-github"><a href="https://github.com/rndmtsk" target="_blank">GitHub</a></li>
+                </ul>
+              </div>
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>Bachelor of Computing</h4>
+                <h5>2000 - 20004</h5>
+                <p><em>University of Guelph, Guelph, ON</em></p>
+                <p>Graduated with honours and an area of emphasis in mathematics</p>
+              </div>
+              <div class="resume-item">
+                <h4>Certified Scrum Master</h4>
+                <h5>2009</h5>
+                <p><em>Scrum Alliance</em></p>
+                <p>License #155926</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="resume-title">Professional Experience</h3>
+              <div class="resume-item">
+                <h4>Staff Software Engineer</h4>
+                <h5>2021 - Present</h5>
+                <p><em>DoorDash, Toronto, ON</em></p>
+                <ul>
+                  <li>Leading iOS internationalization improvements</li>
+                  <li>Promoting SwiftUI and Combine adoption</li>
+                  <li>Mentoring iOS engineers</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Principal Software Developer</h4>
+                <h5>2017 - 2021</h5>
+                <p><em>Tulip Inc., Toronto, ON</em></p>
+                <ul>
+                  <li>
+                    Architectural lead for Tulip's iOS apps &mdash;
+                    <a href="https://apps.apple.com/ca/app/tulip-appointments/id1557678726", target="_blank">Appointments</a>,
+                    <a href="https://apps.apple.com/ca/app/tulip-assisted-selling/id1489223642", target="_blank">Assisted Selling</a>,
+                    <a href="https://apps.apple.com/ca/app/tulip-clienteling/id1489227257", target="_blank">Clienteling</a>,
+                    Document Store,
+                    <a href="https://apps.apple.com/ca/app/tulip-liveconnect/id1490310570" target="_blank">LiveConnect</a>,
+                    and <a href="https://apps.apple.com/ca/app/tulip-runner/id1514788623" target="_blank">Runner</a></li>
+                  <li>Promoted modular architecture, including MVVM-C, VIPER, and Dependency Injection</li>
+                  <li>Mentored iOS developers in architecture, and best practices</li>
+                  <li>Established CI/CD App Store submission pipeline, and automated testing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- End Resume Section -->
+    </main>
+    <!-- Footer -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <h3>Terry Latanville</h3>
+        <p>&mdash; Understanding comes from simple explanations &mdash;</p>
+        <div class="social-links">
+          <a href="https://twitter.com/terrylatanville" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/terrylatanville/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/rndmtsk" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://apps.apple.com/ca/developer/terry-latanville/id1200334897" class="apple"><i class="bx bxl-apple"></i></a>
+        </div>
+        <div class="copyright">
+          &copy; Copyright <strong><span>Terry Latanville</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: [license-url] -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

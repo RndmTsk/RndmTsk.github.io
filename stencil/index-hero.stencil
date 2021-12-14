@@ -1,0 +1,13 @@
+<!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <h1>Terry Latanville</h1>
+        <p><span class="typed" data-typed-items="Developer, Mentor, Swift Evangelist, Gamer"></span></p>
+        <div class="social-links">
+          <a href="https://twitter.com/terrylatanville" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/terrylatanville/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/rndmtsk" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://apps.apple.com/ca/developer/terry-latanville/id1200334897" class="apple"><i class="bx bxl-apple"></i></a>
+        </div>
+      </div>
+    </section><!-- End Hero -->

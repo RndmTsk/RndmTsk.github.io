@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "head.stencil" %}
+  <body id="page-top">
+    <!-- Navigation-->
+    {% include "index-navigation.stencil" %}
+    <!-- Hero -->
+    {% include "index-hero.stencil" %}
+    <main id="main">
+      <!-- Projects-->
+      {% include "index-projects.stencil" %}
+      <!-- Apps -->
+      {% include "index-apps.stencil" %}
+      <!-- Resume -->
+      {% include "index-resume.stencil" %}
+    </main>
+    <!-- Footer -->
+    {% include "index-footer.stencil" %}
+    {% include "index-scripts.stencil" %}
+  </body>
+</html>

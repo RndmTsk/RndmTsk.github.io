@@ -1,0 +1,1 @@
+{"title":"Generation","tagline": "A Swift-based tool used to generate this website from a Docker container","url":"https://github.com/RndmTsk/rndmtsk.github.io/tree/master/generation","languages":["Swift","Stencil", "Docker", "SPM"], "color": "orange", "icon": "bx-sitemap"}

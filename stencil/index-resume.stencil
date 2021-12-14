@@ -1,0 +1,67 @@
+<!-- ======= Resume Section ======= -->
+      <section id="resume" class="resume">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Resume</h2>
+            <p>I've had many amazing opportunities in my career, here's a small sample</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <h3 class="resume-title">Sumary</h3>
+              <div class="resume-item pb-0">
+                <h4>Terry Latanville</h4>
+                <p><em>Passionate developer with extensive experience in enterprise-grade applications. Leadership and mentoring are my favourite ways to provide value within my teams and organizations.</em></p>
+                <ul>
+                  <li class="bx bxl-gmail"><a href="mailto:tlatanville@gmail.com" target="_blank">tlatanville@gmail.com</a></li>
+                  <li class="bx bxl-linkedin"><a href="https://www.linkedin.com/in/terrylatanville/" target="_blank">LinkedIn</a></li>
+                  <li class="bx bxl-github"><a href="https://github.com/rndmtsk" target="_blank">GitHub</a></li>
+                </ul>
+              </div>
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>Bachelor of Computing</h4>
+                <h5>2000 - 20004</h5>
+                <p><em>University of Guelph, Guelph, ON</em></p>
+                <p>Graduated with honours and an area of emphasis in mathematics</p>
+              </div>
+              <div class="resume-item">
+                <h4>Certified Scrum Master</h4>
+                <h5>2009</h5>
+                <p><em>Scrum Alliance</em></p>
+                <p>License #155926</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="resume-title">Professional Experience</h3>
+              <div class="resume-item">
+                <h4>Staff Software Engineer</h4>
+                <h5>2021 - Present</h5>
+                <p><em>DoorDash, Toronto, ON</em></p>
+                <ul>
+                  <li>Leading iOS internationalization improvements</li>
+                  <li>Promoting SwiftUI and Combine adoption</li>
+                  <li>Mentoring iOS engineers</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Principal Software Developer</h4>
+                <h5>2017 - 2021</h5>
+                <p><em>Tulip Inc., Toronto, ON</em></p>
+                <ul>
+                  <li>
+                    Architectural lead for Tulip's iOS apps &mdash;
+                    <a href="https://apps.apple.com/ca/app/tulip-appointments/id1557678726", target="_blank">Appointments</a>,
+                    <a href="https://apps.apple.com/ca/app/tulip-assisted-selling/id1489223642", target="_blank">Assisted Selling</a>,
+                    <a href="https://apps.apple.com/ca/app/tulip-clienteling/id1489227257", target="_blank">Clienteling</a>,
+                    Document Store,
+                    <a href="https://apps.apple.com/ca/app/tulip-liveconnect/id1490310570" target="_blank">LiveConnect</a>,
+                    and <a href="https://apps.apple.com/ca/app/tulip-runner/id1514788623" target="_blank">Runner</a></li>
+                  <li>Promoted modular architecture, including MVVM-C, VIPER, and Dependency Injection</li>
+                  <li>Mentored iOS developers in architecture, and best practices</li>
+                  <li>Established CI/CD App Store submission pipeline, and automated testing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- End Resume Section -->
