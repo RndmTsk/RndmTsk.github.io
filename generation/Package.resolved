@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Mustache",
+        "repositoryURL": "https://github.com/groue/GRMustache.swift",
+        "state": {
+          "branch": null,
+          "revision": "671e2c5234e829c1f337c9d300bd6d9b21d1c42a",
+          "version": "4.0.1"
+        }
+      },
+      {
+        "package": "HTMLString",
+        "repositoryURL": "https://github.com/alexaubry/HTMLString",
+        "state": {
+          "branch": null,
+          "revision": "04613a3b0f40a91e554b5174c0a10657f1a26357",
+          "version": "6.0.1"
+        }
+      },
+      {
+        "package": "Ink",
+        "repositoryURL": "https://github.com/johnsundell/Ink.git",
+        "state": {
+          "branch": null,
+          "revision": "bd223a2482449507bd3286cb262c962d32d81e4b",
+          "version": "0.5.0"
+        }
+      },
+      {
+        "package": "Splash",
+        "repositoryURL": "https://github.com/johnsundell/Splash.git",
+        "state": {
+          "branch": null,
+          "revision": "f25dd8c9f16be1f81a152f6861d7216c3c9302da",
+          "version": "0.14.0"
+        }
+      },
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser",
+        "state": {
+          "branch": null,
+          "revision": "7255fd547f70468e19abbac5f7964f1ef309ad92",
+          "version": "0.2.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,27 @@
+<!-- ======= Apps Section ======= -->
+      <section id="apps" class="apps section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Apps</h2>
+            <p>My work is available in the Apple App Store</p>
+          </div>
+          <div class="row apps-container" data-aos="fade-up" data-aos-delay="200">
+            <center>
+              {% for app in apps %}
+              <div class="col-lg-4 col-md-6 apps-item filter-app">
+                <div class="apps-wrap">
+                  <img src="assets/img/{{ app.icon }}" class="img-fluid" alt="">
+                  <div class="apps-info">
+                    <h4>{{ app.title }}</h4>
+                    <p>App</p>
+                    <div class="apps-links">
+                      <a href="{{ app.url }}" class="apps-details-lightbox" data-glightbox="type: external" title="{{ app.title }} Details" target="_blank"><i class="bx bx-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </center>
+          </div>
+        </div>
+      </section><!-- End Apps Section -->
